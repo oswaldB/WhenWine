@@ -12,7 +12,7 @@ title: Refferal
 <label>Email address (required)</label>
 <input type="email" name="emailAddress" class="email-octopus-email-address">
 </div>
-<div class="email-octopus-form-row">
+<div class="email-octopus-form-row" id="firstName">
 <label>First name</label>
 <input type="text" name="firstName" class="email-octopus-first-name">
 </div>
@@ -115,9 +115,9 @@ $(function() {
 });
 </script>
 <script>
-var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
-for(var i = 0; i < hashParams.length; i++){
-    var p = hashParams[i].split('=');
-    document.getElementById(p[0]).value = decodeURIComponent(p[1]);;
-}
+	var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
+	for(var i = 0; i < hashParams.length; i++){
+	    var p = hashParams[i].split('=');
+	    document.getElementById(p[0]).value = decodeURIComponent(p[1]);;
+	}
 </script>
