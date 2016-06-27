@@ -1725,7 +1725,7 @@ button,
   input[type="button"].special,
   button.special,
   .button.special {
-    background-color: #ed4933;
+    background-color: #ed4933 !important;
     box-shadow: none !important;
     color: #ffffff !important; }
     input[type="submit"].special:hover,
@@ -2684,3 +2684,6 @@ body.is-mobile.landing #footer {
 
 .text-align-left {
   text-align: left; }
+
+.text-align-center {
+  text-align: center; }
