@@ -1841,17 +1841,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		text-align: center;
 	}
 
-	#member {
-	  background: none;
-	  bottom: auto;
-	  left: auto;
-	  position: relative;
-	  right: auto;
-	  top: auto;
-	  width: 100%;
-	}
-
-	  #member > footer {
+#member > footer {
 	    bottom: auto;
 	    left: auto;
 	    margin: 1em 0 0 0;
@@ -1859,3 +1849,14 @@ $baseurl: '{{ site.baseurl }}/images';
 	    right: auto;
 	    top: auto;
 	  }
+
+#member{
+	background: #4acaa8;
+    color: #d1f1e9;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 23em;
+    right: 0;
+}
