@@ -1841,22 +1841,106 @@ $baseurl: '{{ site.baseurl }}/images';
 		text-align: center;
 	}
 
-#member > footer {
-	    bottom: auto;
-	    left: auto;
-	    margin: 1em 0 0 0;
-	    position: relative;
-	    right: auto;
-	    top: auto;
-	  }
+	/* Header */
 
-#member{
-	background: #4acaa8;
-    color: #d1f1e9;
-    height: 100%;
-    position: fixed;
-    text-align: center;
-    top: 0;
-    width: 23em;
-    right: 0;
-}
+		#member {
+			background: #4acaa8;
+			color: #d1f1e9;
+			height: 100%;
+			position: fixed;
+			text-align: center;
+			top: 0;
+			width: 23em;
+			right: 0;
+		}
+
+			#member h1, #member h2, #member h3, #member h4, #member h5, #member h6 {
+				color: #ffffff;
+			}
+
+				#member h1 a, #member h2 a, #member h3 a, #member h4 a, #member h5 a, #member h6 a {
+					color: #ffffff;
+				}
+
+			#member header p {
+				color: #b6e9dc;
+			}
+
+			#member a {
+				color: #d1f1e9;
+			}
+
+				#member a:hover {
+					color: #ffffff !important;
+				}
+
+			#member > header {
+				padding: 3em;
+			}
+
+				#member > header .avatar {
+					display: block;
+					margin: 0 auto 2.25em auto;
+					width: 8em;
+				}
+
+				#member > header h1 {
+					font-size: 1.75em;
+					margin: 0;
+				}
+
+				#member > header p {
+					color: #d1f1e9;
+					font-style: italic;
+					margin: 1em 0 0 0;
+				}
+
+			#member > footer {
+				bottom: 0;
+				left: 0;
+				padding: 2em;
+				position: absolute;
+				width: 100%;
+			}
+
+				#member > footer .icons {
+					margin: 0;
+				}
+
+					#member > footer .icons li a {
+						color: #b6e9dc;
+					}
+
+			#member > nav ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+				#member > nav ul li {
+					border-top: solid 2px #5ccfb0;
+					display: block;
+					padding: 0;
+				}
+
+					#member > nav ul li a {
+						-moz-transition: none;
+						-webkit-transition: none;
+						-o-transition: none;
+						-ms-transition: none;
+						transition: none;
+						border: 0;
+						color: #ffffff !important;
+						display: block;
+						padding: 0.85em 0;
+						text-decoration: none;
+					}
+
+						#member > nav ul li a.active, #member > nav ul li .cc-active {
+							background: #fff;
+							color: #4acaa8 !important;
+						}
+
+					#member > nav ul li:first-child {
+						border-top: 0;
+					}
