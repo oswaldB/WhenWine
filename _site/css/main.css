@@ -2687,3 +2687,20 @@ body.is-mobile.landing #footer {
 
 .text-align-center {
   text-align: center; }
+
+#member {
+  background: none;
+  bottom: auto;
+  left: auto;
+  position: relative;
+  right: auto;
+  top: auto;
+  width: 100%; }
+
+#member > footer {
+  bottom: auto;
+  left: auto;
+  margin: 1em 0 0 0;
+  position: relative;
+  right: auto;
+  top: auto; }
