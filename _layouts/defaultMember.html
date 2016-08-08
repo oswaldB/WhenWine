@@ -5,17 +5,27 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    {% include /head.html %}
+    <!-- {% include /head.html %} -->
     <body>
-        <div id="wrapper">
+      <div>
+      {% include /sidebarMemberFooter.html %}
+    </div>
+      <div id="main" style="max-width:1280px;
+min-height:100%;
+margin:0 auto;
+position:relative;">
+      <div class="row">
+        <div id="wrapper" class="col-xs-3">
         {% include /sidebarMember.html %}
-
+        </div>
             <!-- Main -->
-            <div id="main">
-                {{ content }}
+        <div id="main" class="col-xs-9">
 
-            </div>
-            {% include /sidebarMemberFooter.html %}
-		</div>
+        {{ content }}
+
+        </div>
+		  </div>
+
+  </div>
 	</body>
 </html>

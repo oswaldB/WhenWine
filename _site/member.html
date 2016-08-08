@@ -5,10 +5,18 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    <head>
+    <!-- <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Your Dashboard</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <meta name="description" content="Never missed the potential of your wine again
 ">
   <!--[if lte IE 8]><script src="/WhenWine/js/ie/html5shiv.js"></script><![endif]-->
@@ -18,124 +26,120 @@
   <!--[if lte IE 9]><link rel="stylesheet" href="/WhenWine/css/ie9.css" /><![endif]-->
   <link rel="alternate" type="application/rss+xml" title="WhenWine" href="http://oswaldb.github.io/WhenWine//WhenWine/feed.xml">
 </head>
-
+ -->
     <body>
-        <div id="wrapper">
+      <div>
+      <!-- Footer -->
+    <section id="memberFooter" style="position:absolute;
+bottom:0;
+width:100%;
+padding-top:50px;
+height:50px;">
+        <div class="container">
+            <ul class="copyright">
+                <li class="pull-right">&copy; WhenWine. All rights reserved.</li>
+            </ul>
+        </div>
+    </section>
+
+    </div>
+      <div id="main" style="max-width:1280px;
+min-height:100%;
+margin:0 auto;
+position:relative;">
+      <div class="row">
+        <div id="wrapper" class="col-xs-3">
         <!-- Header -->
-    <section id="member" class="skel-layers-fixed">
+    <section id="member">
         <header>
-            <span class="image avatar"><img src="/WhenWine/images/avatar.jpg" alt="" /></span>
-            <h1 id="logo"><a href="/WhenWine/">Willis Corto</a></h1>
-            <p>I got reprogrammed by a rogue AI<br />
-            and now I'm totally cray</p>
+            <h1><a href="/WhenWine/">WhenWine</a></h1>
         </header>
         <nav id="nav">
             <ul>
-                <li><a href="/WhenWine/">Home</a></li>
-                <li><a href="/WhenWine/contact">Contact</a></li>
-                <li><a href="/WhenWine/blog">Blog</a></li>
+                <li><a href="/WhenWine/member.html">My WineCellar</a></li>
+                <li><a href="/WhenWine/addabottle.html">Add a bottle</a></li>
+                <li><a href="/WhenWine/addabottle.html"> Rate a bottle</a></li>
+                <li><a href="/WhenWine/referral.html">Get a month for free</a></li>
+                <li><a href="/WhenWine/logout.html">Logout</a></li>
             </ul>
         </nav>
         <footer>
             <ul class="icons">
-                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-                <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+                <li><a href="#" class="icon fa-users">Leave the community</a></li>
+                <li><a href="#" class="icon fa-envelope">Email</a></li>
             </ul>
         </footer>
     </section>
 
-
+        </div>
             <!-- Main -->
-            <div id="main">
-                <!-- One -->
-    <section id="one">
-        <div class="container">
-            <header class="major">
-                <h2>Read Only</h2>
-                <p>Just an incredibly simple responsive site<br />
-                template freebie by <a href="http://html5up.net">HTML5 UP</a>.</p>
-            </header>
-            <p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+        <div id="main" class="col-xs-9">
+
+        <section>
+<div class="row">
+  <div class="col-xs-8">
+    <h2> My Wine Cellar</h2>
+  </div>
+  <div class="col-xs-4">
+    <h4 class="pull-right"> Oswald Bernard</h4>
+  </div>
+</div>
+</section>
+<hr>
+
+
+<section>
+  	<div class="table-wrapper margin-top-large">
+  			<table>
+  				<thead>
+  					<tr>
+  						<th>Name</th>
+  						<th>Millesime</th>
+  						<th>Ready to drink?</th>
+  					</tr>
+  				</thead>
+  				<tbody>
+  					<tr>
+  						<td>Saint Julias - domaine du bout du monde</td>
+  						<td>2006</td>
+  						<td >
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </td>
+  					</tr>
+  					<tr>
+  						<td>501 - 1,000</td>
+  						<td class="text-align-left">Early community</td>
+  						<td>$5,00</td>
+  					</tr>
+  					<tr>
+  						<td>1,000 - 2,500</td>
+  						<td class="text-align-left"> A growing communty</td>
+  						<td>$3,00</td>
+  					</tr>
+  					<tr>
+  						<td>2,501 - 5,000</td>
+  						<td class="text-align-left">A community that matters</td>
+  						<td>$1,50</td>
+  					</tr>
+  					<tr>
+  						<td>5,000 +</td>
+  						<td class="text-align-left">A huge community</td>
+  						<td>$0,50</td>
+  					</tr>
+  				</tbody>
+  			</table>
+  		</div>
+  </div>
+</section>
+
+
         </div>
-    </section>
+		  </div>
 
-<!-- Two -->
-    <section id="two">
-        <div class="container">
-            <h3>Things I Can Do</h3>
-            <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
-            <ul class="feature-icons">
-                <li class="fa-code">Write all the code</li>
-                <li class="fa-cubes">Stack small boxes</li>
-                <li class="fa-book">Read books and stuff</li>
-                <li class="fa-coffee">Drink much coffee</li>
-                <li class="fa-bolt">Lightning bolt</li>
-                <li class="fa-users">Shadow clone technique</li>
-            </ul>
-        </div>
-    </section>
-
-<!-- Three -->
-    <section id="three">
-        <div class="container">
-            <h3>A Few Accomplishments</h3>
-            <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-            <div class="features">
-                <article>
-                    <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-                    <div class="inner">
-                        <h4>Possibly broke spacetime</h4>
-                        <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-                    </div>
-                </article>
-                <article>
-                    <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-                    <div class="inner">
-                        <h4>Terraformed a small moon</h4>
-                        <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-                    </div>
-                </article>
-                <article>
-                    <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-                    <div class="inner">
-                        <h4>Snapped dark matter in the wild</h4>
-                        <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-
-            </div>
-            <!-- Footer -->
-<footer id="footer">
-  <ul class="icons">
-    
-    
-    
-    <li><a target="_blank" href="/contact/" class="icon fa-envelope-o"
-           ><span class="label">E-mail</span></a></li>
-    
-    
-    
-  </ul>
-  <ul class="copyright">
-    <li>&copy; 
-    
-      
-      
-    
-    2016
-    WhenWine</li>
-    <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
-    <li>Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
-  </ul>
-</footer>
-
-		</div>
+  </div>
 	</body>
 </html>
