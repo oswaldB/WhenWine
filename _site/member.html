@@ -5,7 +5,16 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    <!-- <head>
+  <!-- Scripts -->
+<script src="/WhenWine/js/jquery.min.js"></script>
+<script src="/WhenWine/js/jquery.scrollex.min.js"></script>
+<script src="/WhenWine/js/jquery.scrolly.min.js"></script>
+<script src="/WhenWine/js/skel.min.js"></script>
+<script src="/WhenWine/js/util.js"></script>
+<!--[if lte IE 8]><script src="/WhenWine/js/ie/respond.min.js"></script><![endif]-->
+<script src="/WhenWine/js/main.js"></script>
+
+    <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Your Dashboard</title>
@@ -26,7 +35,8 @@
   <!--[if lte IE 9]><link rel="stylesheet" href="/WhenWine/css/ie9.css" /><![endif]-->
   <link rel="alternate" type="application/rss+xml" title="WhenWine" href="http://oswaldb.github.io/WhenWine//WhenWine/feed.xml">
 </head>
- -->
+
+
     <body>
       <div>
       <!-- Footer -->
@@ -50,6 +60,29 @@ position:relative;">
       <div class="row">
         <div id="wrapper" class="col-xs-3">
         <!-- Header -->
+<script type="text/javascript">
+// Logout functionnality
+function logout() {
+  console.log('ici ok2');
+  firebase.auth().signOut();
+}
+function initApp() {
+  // Listening for auth state changes.
+  // [START authstatelistener]
+  firebase.auth().onAuthStateChanged(function(user) {
+    // [START_EXCLUDE silent]
+    // [END_EXCLUDE]
+    if (!user) {
+    window.location=('/WhenWine/login.html');
+
+    } 
+  });
+}
+window.onload = function() {
+  initApp();
+};
+</script>
+
     <section id="member">
         <header>
             <h1><a href="/WhenWine/">WhenWine</a></h1>
@@ -60,7 +93,7 @@ position:relative;">
                 <li><a href="/WhenWine/addabottle.html">Add a bottle</a></li>
                 <li><a href="/WhenWine/addabottle.html"> Rate a bottle</a></li>
                 <li><a href="/WhenWine/referral.html">Get a month for free</a></li>
-                <li><a href="/WhenWine/logout.html">Logout</a></li>
+                <li><a href="#" onclick='logout(); console.log("ici ok"); return false;' id="logout">Logout</a></li>
             </ul>
         </nav>
         <footer>
@@ -152,6 +185,7 @@ position:relative;">
   };
   firebase.initializeApp(config);
 </script>
+
 
 	</body>
 </html>
