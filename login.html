@@ -1,6 +1,6 @@
 ---
 layout: page
-title: LOGIN
+title: LOG IN
 ---
 
   <script type="text/javascript">
@@ -124,31 +124,10 @@ title: LOGIN
       firebase.auth().onAuthStateChanged(function(user) {
         // [START_EXCLUDE silent]
         document.getElementById('quickstart-verify-email').disabled = true;
+        document.getElementById('quickstart-sign-in').disabled = false;
         // [END_EXCLUDE]
         if (user) {
-          // User is signed in.
-          // var displayName = user.displayName;
-          // var email = user.email;
-          // var emailVerified = user.emailVerified;
-          // var photoURL = user.photoURL;
-          // var isAnonymous = user.isAnonymous;
-          // var uid = user.uid;
-          // var refreshToken = user.refreshToken;
-          // var providerData = user.providerData;
-          // // [START_EXCLUDE silent]
-          // document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
-          // document.getElementById('quickstart-sign-in').textContent = 'Sign out';
-          // document.getElementById('quickstart-account-details').textContent = JSON.stringify({
-          //   displayName: displayName,
-          //   email: email,
-          //   emailVerified: emailVerified,
-          //   photoURL: photoURL,
-          //   isAnonymous: isAnonymous,
-          //   uid: uid,
-          //   refreshToken: refreshToken,
-          //   providerData: providerData
-          // }, null, '  ');
-					window.location ="/WhenWine/member.html"
+					window.location ="/WhenWine/member.html";
           if (!emailVerified) {
             document.getElementById('quickstart-verify-email').disabled = false;
           }
@@ -158,8 +137,6 @@ title: LOGIN
           // [START_EXCLUDE silent]
           document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
           document.getElementById('quickstart-sign-in').textContent = 'Sign in';
-          document.getElementById('quickstart-account-details').textContent = 'null';
-          // [END_EXCLUDE]
         }
         // [START_EXCLUDE silent]
         document.getElementById('quickstart-sign-in').disabled = false;
@@ -197,16 +174,33 @@ title: LOGIN
           &nbsp;&nbsp;&nbsp;
           <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
           &nbsp;&nbsp;&nbsp;
-          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
-
-          <!-- Container where we'll display the user details -->
-          <!-- <div class="quickstart-user-details-container">
-            Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
-            <div>Firebase auth <code>currentUser</code> object value:</div>
-            <pre><code id="quickstart-account-details">null</code></pre>
-          </div> -->
+          <!-- Button trigger modal -->
+          <button type="button" class="button fit btn-lg" data-toggle="modal" data-target="#emailLost">
+          Lost password?
+          </button>
         </div>
       </div>
 
     </div>
   </div>
+
+
+<!-- Modal for the lostpassword -->
+<!-- Modal -->
+<div class="modal fade" id="emailLost" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Lost password?</h4>
+      </div>
+      <div class="modal-body">
+        <input class="mdl-textfield__input" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
+      </div>
+    </div>
+  </div>
+</div>
