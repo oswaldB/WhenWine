@@ -2803,3 +2803,6 @@ body.is-mobile.landing #memberFooter {
 
 .copyright li {
   color: black; }
+
+.modal-dialog {
+  margin-top: 70Px; }
